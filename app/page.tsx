@@ -1,8 +1,10 @@
+import React from "react";
 import { DashboardHeader } from "@/components/dashboard/header";
 import { DashboardShell } from "@/components/dashboard/shell";
 import { RektChart } from "@/components/dashboard/rekt-chart";
 import { QuickStats } from "@/components/dashboard/quick-stats";
 import { MarketHeatmap } from "@/components/dashboard/market-heatmap";
+import RektDashboard from "@/components/RektDashboard";
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
           <QuickStats />
         </div>
       </div>
+      <RektDashboard />
     </DashboardShell>
   );
 }
